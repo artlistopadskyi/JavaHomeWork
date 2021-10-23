@@ -10,10 +10,11 @@ public class Bingo {
 
         Random random = new Random();
 
-        final int MAX_ATTEMPT = random.nextInt();
+        final int MAX_ATTEMPT = 101;
         int x = random.nextInt(101);
         int attempt = 0;
         Scanner in = new Scanner(System.in);
+
 
         while (attempt < MAX_ATTEMPT) {
             attempt++;
@@ -25,15 +26,13 @@ public class Bingo {
             }
 
             if (!value.equals(x)) {
-                continue;
-            }
-
-            System.out.println("Поздравляем, Вы угадали с " + attempt + " попытки!");
-            break;
+                System.out.println("Поздравляем, Вы угадали с " + attempt + " попытки!");
+            } break;
         }
 
         System.out.println("Конец игры!");
     }
 }
+
 
 
