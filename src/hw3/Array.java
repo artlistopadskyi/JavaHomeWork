@@ -12,14 +12,14 @@ public class Array<isSorted> {
             array[i] = scanner.nextInt();
         }
         int sum = 0;
-        for (int i = 0; i < array.length; i++) {
-            sum = sum + array[i];
+        for (int j : array) {
+            sum = sum + j;
         }
         System.out.println("Сума массива:" + (sum));
 
         int count = 0;
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] > 0) {
+        for (int j : array) {
+            if (j > 0) {
                 count++;
             }
         }
