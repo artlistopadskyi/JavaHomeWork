@@ -14,8 +14,6 @@ public class Bingo {
         int x = random.nextInt(101);
         int attempt = 0;
         Scanner in = new Scanner(System.in);
-        int num = Integer.parseInt(value);
-
 
 
         while (attempt < MAX_ATTEMPT) {
@@ -26,17 +24,21 @@ public class Bingo {
                 break;
             } else {
 
-                if (value.equals(x == num)) {
-
+                int num = Integer.parseInt(value);
+                if (x == num) {
                     System.out.println("Поздравляем, Вы угадали с " + attempt + " попытки!");
-                }
-                break;
-            }
+                    break;
+                } else {
+                    System.out.println("Неверно,попробуйте еще.");
 
-            System.out.println("Конец игры!");
+                }
+
+            }
         }
+        System.out.println("Конец игры!");
     }
 }
+
 
 
 
