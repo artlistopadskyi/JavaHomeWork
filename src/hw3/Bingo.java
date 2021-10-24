@@ -25,6 +25,8 @@ public class Bingo {
             } else {
 
                 int num = Integer.parseInt(value);
+                if (num> x) {System.out.println("загадайте число меньше");}
+                    if (num<x) {System.out.println("загадайте число больше");}
                 if (x == num) {
                     System.out.println("Поздравляем, Вы угадали с " + attempt + " попытки!");
                     break;
